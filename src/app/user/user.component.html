@@ -1,0 +1,6 @@
+<button (click)="addData()">Add Data</button>
+<p *ngFor="let users of user">
+  {{users.name}}
+  <button (click)="updateData(users.id)">Update Data</button>
+  <button (click)="deleteData(users.id)">Delete Data</button>
+</p>
